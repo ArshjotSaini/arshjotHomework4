@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>View Company</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/new_company">New Company <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/map">View Map</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <form method="POST" action="/new_company"> 
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="companyname">Company Name</label>
+            <input type="text" class="form-control" name="companyname" id="companyname" placeholder="Company Name" value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="postingage">Posting Age</label>
+            <input type="text" class="form-control" name="postingage" id="postingage" placeholder="Posting Age" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="jobid">Job Id</label>
+          <input type="text" class="form-control" name="jobid" id="jobid" placeholder="Job Id" value="">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" name="country" id="country" placeholder="Country" value="">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" name="location" id="location" placeholder="Location" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="publication">Publication</label>
+          <input type="text" class="form-control" name="b" id="publication" placeholder="Publication" value="">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="salarymax">Salary Max</label>
+            <input type="text" class="form-control" name="salarymax" id="salarymax" placeholder="Salary Max" value="">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="salarymin">Salary Min</label>
+            <input type="text" class="form-control" name="salarymin" id="salarymin" placeholder="Salary Min" value="">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="salarytype">Salary Type</label>
+            <input type="text" class="form-control" name="salarytype" id="salarytype" placeholder="Salary Type" value="">
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="jobtitle">Job Title</label>
+            <input type="text" class="form-control" name="jobtitle" id="jobtitle" placeholder="Job Title" value="">
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+      </form>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
